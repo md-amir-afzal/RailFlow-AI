@@ -1,0 +1,26 @@
+RAILFLOW AI - QUICK START
+
+WINDOWS (recommended)
+1. Install Python 3.10+ and Node.js 20+ (npm comes with Node.js).
+2. Extract this ZIP completely to a folder.
+3. Double-click setup_windows.bat (first launch; internet required to install packages).
+4. For later launches, double-click run_windows.bat.
+5. Dashboard: http://127.0.0.1:5173
+   API docs: http://127.0.0.1:8000/docs
+
+MAC / LINUX
+1. Install Python 3.10+, Node.js 20+ and npm.
+2. In this folder run: chmod +x setup_local.sh run_local.sh
+3. First launch: ./setup_local.sh
+4. Later launches: ./run_local.sh
+
+DOCKER
+Install Docker and Compose, then run: docker compose up --build
+Open http://localhost:5173
+
+IMPORTANT
+- Keep backend and frontend terminal windows open while using the local app.
+- First-time setup needs an internet connection for Python and npm packages.
+- All train and network data is synthetic. This is a learning/research prototype,
+  not live Indian Railways data and not a certified train dispatch/control system.
+- See README.md for details, API endpoints, tests and limitations.

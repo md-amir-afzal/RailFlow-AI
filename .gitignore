@@ -1,0 +1,25 @@
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+node_modules/
+dist/
+.env
+*.db
+backend/data/*.sqlite3
+backend/data/*.sqlite3-shm
+backend/data/*.sqlite3-wal
+backend/data/*.joblib
+frontend/dist/
+frontend/.vite/
+
+# TypeScript incremental compiler output
+frontend/tsconfig.tsbuildinfo
+
+# Local runtime data and generated model artifacts
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+*.joblib
+*.tsbuildinfo

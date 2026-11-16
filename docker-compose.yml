@@ -1,0 +1,21 @@
+services:
+  api:
+    build: ./backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      DATA_MODE: SYNTHETIC_DEMO
+    volumes:
+      - railflow_data:/app/data
+
+  web:
+    build: ./frontend
+    restart: unless-stopped
+    depends_on:
+      - api
+    ports:
+      - "5173:80"
+
+volumes:
+  railflow_data:
